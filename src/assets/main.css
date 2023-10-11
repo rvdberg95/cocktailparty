@@ -1,0 +1,119 @@
+:root {
+  --blue-1: #9edcdd;
+  --blue-2: #c2f2f9;
+  --blue-3: #68afc3;
+  --lime-3: #586d10;
+  --offwhite: #fffef1;
+  --teal-1: #4bbd9e;
+  --teal-2: #9edec6;
+  --teal-3: #357868;
+  --yellow-1: #fbd651;
+  --yellow-2: #fff0a1;
+  --yellow-3: #f59d1a;
+  --shareGreen: #21ED4E;
+  --shareGreenFont: #357838;
+  --Gradient-Teal-1-Blue-1: linear-gradient(135deg, #4bbd9e 31.77%, #9edcdd 100%);
+  --friend-0: #ffbbb7;
+  --friend-1: #f5ffb7;
+  --friend-2: #b7fbff;
+  --friend-3: #c1b7ff;
+  --friend-4: #b7ffb7;
+  --friend-5: #ffecb7;
+  --friend-6: #fdb7ff;
+  --friend-7: #b7b7ff;
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: Roboto Slab;
+  color: var(--offwhite);
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  position: relative;
+  z-index: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.bg-thing{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+#bgthing1 {
+  z-index: -2;
+  position: absolute;
+  bottom: 0;
+}
+
+#bgthing2 {
+  z-index:-3;
+  position: absolute;
+  bottom: 1rem;
+  position: absolute;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 800;
+  margin: 0 auto;
+}
+
+h2 {
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  font-family: Roboto Slab;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h3 {
+  text-align: center;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.1px;
+}
+
+h4 {
+  color: var(--teal-2);
+
+  /* TextShadow */
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+  /* H4 */
+  font-family: Roboto Slab;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 0;
+  letter-spacing: 0.75px;
+}
+
+p, li {
+  color: var(--Offwhite-1, #FFFEF1);
+
+/* TextShadow */
+text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+/* H4 */
+font-family: Roboto Slab;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+margin: 0;
+}
