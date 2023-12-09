@@ -5,7 +5,7 @@
             :subtitle="'Great choices! Tap on a Cocktail to see how its going to be made and what ingredients are needed. Share the drinks through whatsapp with the share button below.'">
         </TheHeader>
         <div class="overview-container">
-            <BaseOverview v-for="friend in this.friends" :friendName="friend" :id="friends.indexOf(friend) - 1"
+            <BaseOverview v-for="friend in friends" :friendName="friend" :id="friends.indexOf(friend) - 1"
                 :drinkName="drinks[friends.indexOf(friend)].strDrink" :drinkInfo="drinks[friends.indexOf(friend)]">
             </BaseOverview>
         </div>
