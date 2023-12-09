@@ -6,20 +6,20 @@
       ></TheHeader>
     <h3>Party Drink made by</h3>
     <FriendElement
-    :friend="this.friendName"
-    :id="this.getId"
+    :friend="friendName"
+    :id="getId"
     :centered="true"
     ></FriendElement>
     <ShowcaseDrink  
         :id="this.getId" :friend-name="this.friendName"
-          :drink-name="this.drinks[getId]"
+          :drink-name="drinks[getId]"
           :notext="true"
           :notag="true"
           >
     </ShowcaseDrink>
     <BaseInfo
-    :title="`How to make a ${this.drinkName}`"
-    :info="this.drinks[this.getId].strInstructions"
+    :title="`How to make a ${drinkName}`"
+    :info="drinks[getId].strInstructions"
     :type="'instructions'"
 
     ></BaseInfo>
