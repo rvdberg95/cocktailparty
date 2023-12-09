@@ -83,12 +83,12 @@
             </defs>
           </svg>
         </div>
-        <FriendElement :friend="this.friends[count]" :id="this.count" :centered="true"></FriendElement>
+        <FriendElement :friend="friends[count]" :id="count" :centered="true"></FriendElement>
       </div>
-      <div  v-if="!isLoading" :key="this.count" class="showcase" @click="nextDrink">
+      <div  v-if="!isLoading" :key="count" class="showcase" @click="nextDrink">
         <ShowcaseDrink  
-        :id="this.count" :friend-name="this.friends[count]"
-          :drink-name="this.drinks[count]">
+        :id="this.count" :friend-name="friends[count]"
+          :drink-name="drinks[count]">
         </ShowcaseDrink>
         <!-- <BaseButton v-if="!isLoading" @click="nextDrink" :text="'Next drink!'"></BaseButton> -->
       </div>
