@@ -11,7 +11,7 @@
     :centered="true"
     ></FriendElement>
     <ShowcaseDrink  
-        :id="this.getId" :friend-name="this.friendName"
+        :id="getId" :friend-name="friendName"
           :drink-name="drinks[getId]"
           :notext="true"
           :notag="true"
