@@ -87,7 +87,7 @@
       </div>
       <div  v-if="!isLoading" :key="count" class="showcase" @click="nextDrink">
         <ShowcaseDrink  
-        :id="this.count" :friend-name="friends[count]"
+        :id="count" :friend-name="friends[count]"
           :drink-name="drinks[count]">
         </ShowcaseDrink>
         <!-- <BaseButton v-if="!isLoading" @click="nextDrink" :text="'Next drink!'"></BaseButton> -->
