@@ -10,7 +10,7 @@
             </BaseOverview>
         </div>
         <BaseButton :text="'Share the Party Drinks'" :share="true" @click="copy"></BaseButton>
-        <BaseButton :text="'Reset'"></BaseButton>
+        <BaseButton :text="'Reset'" @click="reset"></BaseButton>
     </div>
 </template>
 
@@ -55,6 +55,9 @@ export default {
             console.log(getData.join('\n\n'));
             navigator.clipboard.writeText(getData.join('\n\n'));
         },
+        reset(){
+            this.$router.push('start');
+        }
     }
 };
 
