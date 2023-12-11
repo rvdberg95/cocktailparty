@@ -53,7 +53,8 @@ h2 {
 
 .img-container {
     margin: auto;
-    width: 32.5rem;
+    min-width: 14rem;
+    max-width: 36rem;
     aspect-ratio: 1 / 1;
     background-color: var(--teal-2);
     position: relative;

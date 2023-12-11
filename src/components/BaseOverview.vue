@@ -39,15 +39,16 @@ export default {
 
 <style scoped>
 .container {
-    width: auto;
-    background-color: var(--teal-3);
-    margin: auto;
+    min-width: 14rem;
+    max-width: 50%;
     position: relative;
-    padding: 1.8rem;
+    padding: 1.8rem 2.6rem;
     align-items: center;
+    justify-self: center;
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     overflow: hidden;
+    margin: auto 0;
 }
 
 .img-img-container {
@@ -57,7 +58,6 @@ export default {
 img {
     width: 100%;
     border-radius: 5px;
-
 }
 
 .drink-img-info {
@@ -91,6 +91,7 @@ h4 {
     font-size: 1.8rem;
     text-align: center;
     text-transform: capitalize;
+    color: var(--teal-2);
 }
 
 h5 {
@@ -102,8 +103,8 @@ h5 {
 .visualEl {
     position: absolute;
     content: '';
-    left: -125%;
-    bottom: -225%;
+    left: -115%;
+    bottom: -215%;
     transform: rotate(45deg);
     width: 40rem;
     height: 40rem;

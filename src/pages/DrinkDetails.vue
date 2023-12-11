@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container master-container">
       <BackButton></BackButton>
       <TheHeader
       :title="drinkName"
@@ -86,4 +86,56 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+
+/* .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  align-items: center;
+  justify-content: start;
+  margin: 0;
+  background: var(--Gradient-Teal-1-Blue-1);
+}
+
+
+.bgswirl {
+  position: fixed;
+  right: 0%;
+  bottom: -5%;
+  margin-left: auto;
+  z-index: -1;
+  width: 300px;
+  height: auto;
+} */
+.container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin: 0;
+  gap: 1.8rem;
+  background: var(--Gradient-Teal-1-Blue-1);
+}
+
+.master-container {
+  padding-bottom: 28rem;
+}
+
+
+.bgswirl {
+  position: fixed;
+  right: 0%;
+  bottom: -5%;
+  margin-left: auto;
+  z-index: -1;
+  width: 300px;
+  height: auto;
+}
+
+</style>
 

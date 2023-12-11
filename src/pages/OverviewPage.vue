@@ -1,11 +1,11 @@
 
 <template>
-    <div class="container">
+    <div class="ov-container">
         <TheHeader :title="'Whos got what?'"
             :subtitle="'Great choices! Tap on a Cocktail to see how its going to be made and what ingredients are needed. Share the drinks through whatsapp with the share button below.'">
         </TheHeader>
         <div class="overview-container">
-            <BaseOverview v-for="friend in friends" :friendName="friend" :id="friends.indexOf(friend) - 1"
+            <BaseOverview class="seperate-ov" v-for="friend in friends" :friendName="friend" :id="friends.indexOf(friend) - 1"
                 :drinkName="drinks[friends.indexOf(friend)].strDrink" :drinkInfo="drinks[friends.indexOf(friend)]">
             </BaseOverview>
         </div>
@@ -64,13 +64,43 @@ export default {
 </script>
 
 <style scoped>
-.container {
-    margin-bottom: 2rem;
+
+.ov-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin: 0;
+  padding: 4rem 0 32rem 0;
+  gap: 1.8rem;
+  background: var(--Gradient-Teal-1-Blue-1);
+  align-self: baseline;
+
 }
+
+
+.bgswirl {
+  position: fixed;
+  right: 0%;
+  bottom: -5%;
+  margin-left: auto;
+  z-index: -1;
+  width: 300px;
+  height: auto;
+
+}
+
 
 .overview-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.4rem;
+    width: min-content;    
+}
+
+
+.seperate-ov {
+    background-color: var(--teal-3);
 }
 </style>

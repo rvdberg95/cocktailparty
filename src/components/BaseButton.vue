@@ -16,13 +16,13 @@ export default {
         };
     },
     props: ['text', 'share'],
-    mounted(){
-        console.log(this.share, 'WOEROJ');
-    },
+    // mounted(){
+    //     console.log(this.share, 'WOEROJ');
+    // },
     computed: {
-        share(){
-            return this.share;
-        }
+        // share(){
+        //     return this.share;
+        // }
     }
 }
 
@@ -33,7 +33,7 @@ export default {
     position: relative;
     /* flex-direction: column; */
     margin-bottom: 1rem;
-    padding: 0.25rem 2rem 0.25rem 3rem;
+    padding: 2.8rem 4rem;
     align-items: center;
     border-radius: 0.3125rem;
     background: linear-gradient(135deg, #C2F2F9 0%, #9EDCDD 100%);

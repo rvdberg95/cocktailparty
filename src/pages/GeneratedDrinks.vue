@@ -93,7 +93,7 @@
         <!-- <BaseButton v-if="!isLoading" @click="nextDrink" :text="'Next drink!'"></BaseButton> -->
       </div>
     </TransitionGroup>
-    <BackgroundSwirl></BackgroundSwirl>
+    <BackgroundSwirl class="bgswirl"></BackgroundSwirl>
   </div>
 
 </template>
@@ -161,6 +161,29 @@ export default {
 
 
 <style scoped>
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  align-items: center;
+  justify-content: start;
+  margin: 0;
+  background: var(--Gradient-Teal-1-Blue-1);
+}
+
+
+.bgswirl {
+  position: fixed;
+  right: 0%;
+  bottom: -5%;
+  margin-left: auto;
+  z-index: -1;
+  width: 300px;
+  height: auto;
+}
+
 .list-enter-active {
   opacity: 1;
   transition: all 1s ease;

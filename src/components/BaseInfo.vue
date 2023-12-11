@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="info-container">
         <h2>{{ title }}</h2>
         <div v-if="type === 'instructions'">
         <p>{{ info }}</p>
@@ -25,15 +25,22 @@ export default {
     text-transform: capitalize;
 }
 
-.container {
+.info-container {
     background-color: var(--teal-3);
-    padding: 2rem;
+    padding: 3.2rem;
     border-radius: 5px;
-    margin-bottom: 2rem;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 33.1rem;
+    text-align: start;
 }
+
+
 h2 {
     font-size: 1.8rem;
-    margin: 0.75rem 0 ;
+    margin: 0.75rem ;
+}
+
+li {
+    line-height: 1.8;
 }
 </style>

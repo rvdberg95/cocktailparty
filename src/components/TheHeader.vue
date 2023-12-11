@@ -94,11 +94,18 @@ export default {
 <style scoped>
 .header-container {
   display: flex;
-  padding-top: 1.6rem;
-  margin-bottom: 1rem;
+  padding: 0rem 0 0 0;
+  margin: 1.8rem 0 ;
+  justify-self: start;
+  align-self: center;
+  max-width: 33rem;
 }
 
 .header-text {
   width: 28rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="container" @click="routeBack">
+    <div class="back-container" @click="routeBack">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 24" fill="none">
             <g filter="url(#filter0_d_123_1467)">
                 <path
@@ -41,9 +41,12 @@ export default {
 </script>
     
 <style scoped>
-.container {
+.back-container {
     display: flex;
     gap: 2rem;
+    width: 90%;
+    height: fit-content;
+    margin: 2rem;
 }
 
 .icon {
@@ -54,4 +57,6 @@ export default {
 
 h4 {
     color: var(--offwhite);
-}</style>
+    line-height: 2;
+}
+</style>

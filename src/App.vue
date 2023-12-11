@@ -17,15 +17,10 @@ import { ref, provide } from 'vue';
 </script>
 
 
-
 <style scoped>
-.container {
-  margin: auto;
-  background: var(--Gradient-Teal-1-Blue-1);
-  width: 360px;
-  height: 800px;
-  padding: 32px;
+.background {
+  display: flex;
+  height: 100vh;
 }
 </style>
-
 
