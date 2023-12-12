@@ -98,7 +98,10 @@ export default {
   margin: 1.8rem 0 ;
   justify-self: start;
   align-self: center;
-  max-width: 33rem;
+}
+
+h2 {
+  font-size: 1.6rem;
 }
 
 .header-text {

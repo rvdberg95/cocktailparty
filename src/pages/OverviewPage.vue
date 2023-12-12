@@ -9,9 +9,12 @@
                 :drinkName="drinks[friends.indexOf(friend)].strDrink" :drinkInfo="drinks[friends.indexOf(friend)]">
             </BaseOverview>
         </div>
+        <a href="whatsapp://send?text=TESTING"  >WHATSAPP</a>
         <BaseButton :text="'Share the Party Drinks'" :share="true" @click="copy"></BaseButton>
         <BaseButton :text="'Reset'" @click="reset"></BaseButton>
+        <BackgroundSwirl class="bgswirl"></BackgroundSwirl>
     </div>
+
 </template>
 
 
@@ -19,6 +22,7 @@
 import BaseButton from '../components/BaseButton.vue';
 import BaseOverview from '../components/BaseOverview.vue';
 import TheHeader from '../components/TheHeader.vue';
+import BackgroundSwirl from '../components/BackgroundSwirl.vue';
 
 </script>
 
@@ -72,7 +76,7 @@ export default {
   align-items: center;
   justify-content: start;
   margin: 0;
-  padding: 4rem 0 32rem 0;
+  padding: 4rem 0 10rem 0;
   gap: 1.8rem;
   background: var(--Gradient-Teal-1-Blue-1);
   align-self: baseline;
@@ -85,11 +89,11 @@ export default {
   right: 0%;
   bottom: -5%;
   margin-left: auto;
-  z-index: -1;
+  z-index: 1;
   width: 300px;
   height: auto;
-
 }
+
 
 
 .overview-container {
@@ -97,6 +101,7 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.4rem;
     width: min-content;    
+    margin-bottom: 1.8rem;
 }
 
 

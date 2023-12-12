@@ -55,7 +55,7 @@ export default {
     justify-content: space-between;
     border-radius: 0.3125rem;
     overflow: hidden;
-    max-width: 31rem;
+    width: 32rem;
 }
 
 

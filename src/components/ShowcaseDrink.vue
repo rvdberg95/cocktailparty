@@ -46,9 +46,9 @@ export default {
 h2 {
     text-align: center;
     text-transform: capitalize;
-    margin-bottom: 3rem;
     font-weight: 400;
     font-size: 2rem;
+    margin-bottom: 1.8rem;
 }
 
 .img-container {
@@ -64,12 +64,21 @@ h2 {
     border-radius: 5p;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin-bottom: 3rem;
+    overflow: hidden;
+    z-index: 2;
+
 }
 
 .img-img-container {
     border-radius: 5px;
+    margin: -2.8rem;
+    overflow: hidden;
 }
 
+img {
+    width: 100%;
+    border-radius: 5px;
+}
 
 
 #center-text {
@@ -83,10 +92,10 @@ img {
 h3 {
     position: absolute;
     z-index: 10;
-    bottom: 1.5rem;
+    bottom: 2rem;
     left: 3rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-family: Josefin Sans;
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(0, 0, 0, 1);
 }
 </style>

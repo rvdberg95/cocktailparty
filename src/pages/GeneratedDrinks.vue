@@ -177,7 +177,7 @@ export default {
 .bgswirl {
   position: fixed;
   right: 0%;
-  bottom: -5%;
+  bottom: 0;
   margin-left: auto;
   z-index: -1;
   width: 300px;

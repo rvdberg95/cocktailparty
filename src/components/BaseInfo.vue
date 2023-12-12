@@ -23,6 +23,7 @@ export default {
 <style scoped>
 * {
     text-transform: capitalize;
+    
 }
 
 .info-container {
@@ -32,12 +33,13 @@ export default {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     width: 33.1rem;
     text-align: start;
+    z-index: 2;
 }
 
 
 h2 {
     font-size: 1.8rem;
-    margin: 0.75rem ;
+    margin: 0.75rem  0 ;
 }
 
 li {

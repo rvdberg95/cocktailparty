@@ -4,7 +4,7 @@
       <TheHeader
       :title="drinkName"
       ></TheHeader>
-    <h3>Party Drink made by</h3>
+    <p>Party Drink made by</p>
     <FriendElement
     :friend="friendName"
     :id="getId"
@@ -29,11 +29,13 @@
     :type="'list'"
     ></BaseInfo>
     
+    <BackgroundSwirl class="bgswirl"></BackgroundSwirl>
 </div>
 </template>
 
 <script setup>
 import BackButton from '../components/BackButton.vue';
+import BackgroundSwirl from '../components/BackgroundSwirl.vue';
 import BaseInfo from '../components/BaseInfo.vue';
 import FriendElement from '../components/FriendElement.vue';
 import ShowcaseDrink from '../components/ShowcaseDrink.vue';
@@ -82,8 +84,9 @@ export default {
           }
 
           return finalList;
-        }
+        },
     },
+    
 };
 </script>
 
@@ -132,7 +135,7 @@ export default {
   right: 0%;
   bottom: -5%;
   margin-left: auto;
-  z-index: -1;
+  z-index: 0;
   width: 300px;
   height: auto;
 }
