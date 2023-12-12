@@ -30,6 +30,7 @@ import BackgroundSwirl from '../components/BackgroundSwirl.vue';
 export default {
     data() {
         return {
+            getData: '',
         };
     },
     computed: {
@@ -42,7 +43,7 @@ export default {
     },
     methods: {
         copy() {
-            let getData = [];
+        getData = [];
             this.friends.forEach(friend => {
                 const id = this.friends.indexOf(friend);
                 const finalList = [];
