@@ -10,7 +10,7 @@
             </BaseOverview>
         </div>
         <BaseButton :text="'Share the Party Drinks'" :share="true" @click="copy"></BaseButton>
-        <BaseButton :text="'Share the Party Drinks via Whatsapp'" :share="true" @click="copy" id="whatsapp-share"></BaseButton>
+        <a id="whatsapp-share"><BaseButton :text="'Share the Party Drinks via Whatsapp'" :share="true" @click="copy"></BaseButton></a>
         <BaseButton :text="'Reset'" @click="reset"></BaseButton>
         <BackgroundSwirl class="bgswirl"></BackgroundSwirl>
     </div>
@@ -63,7 +63,7 @@ export default {
             //Selecting element and giving it href
             const shareButton = document.querySelector('#whatsapp-share');
             console.log(shareButton);
-            shareButton.href = `whatsapp://send?text=${this.getData}`;
+            document.querySelector('#whatsapp-share').href = `whatsapp://send?text=${this.getData}`;
         },
         reset(){
             this.$router.push('start');
