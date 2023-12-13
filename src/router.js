@@ -36,6 +36,12 @@ const router = createRouter({
         props: {default: true},
         component: DrinkDetails,
       },
+      {
+        name: 'details-drink',
+        path: '/details/:drinkInfo',
+        props: {default: true},
+        component: DrinkDetails,
+      },
     ],
     linkActiveClass: 'active',
   });

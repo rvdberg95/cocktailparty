@@ -30,14 +30,12 @@
     ></BaseInfo>
     
     <BackgroundSwirl class="bgswirl"></BackgroundSwirl>
-    <a id="whatsapp-share"><BaseButton :text="'Share this Drink via Whatsapp'" :share="true" @click="send"></BaseButton></a>
 </div>
 </template>
 
 <script setup>
 import BackButton from '../components/BackButton.vue';
 import BackgroundSwirl from '../components/BackgroundSwirl.vue';
-import BaseButton from '../components/BaseButton.vue';
 import BaseInfo from '../components/BaseInfo.vue';
 import FriendElement from '../components/FriendElement.vue';
 import ShowcaseDrink from '../components/ShowcaseDrink.vue';
@@ -86,30 +84,6 @@ export default {
           }
 
           return finalList;
-        },
-    },
-    methods: {
-        send() {
-        // this.getData = [];
-            // this.friends.forEach(friend => {
-            //     const id = this.friends.indexOf(friend);
-            //     const finalList = [];
-            //     for (let i = 0; i < 15; i++) {
-            //         const suffix = `strIngredient${i}`
-            //         const newItem = this.drinks[id][suffix];
-            //         if (newItem) {
-            //             finalList.push(this.drinks[id][suffix]);
-            //         }
-            //     }
-            //     const output = `${friend} will be making ${this.drinks[id].strDrink} \nIngredients needed: ${finalList} \n${this.drinks[id].strInstructions}`;
-            //     this.getData.push(output);
-            // });
-            // console.log(this.getData.join('\n\n'));
-            // navigator.clipboard.writeText(this.getData.join('\n\n'));
-
-            //Selecting element and giving it href
-            console.log(window.location.href);
-            document.querySelector('#whatsapp-share').href = `https://api.whatsapp.com/send?link=${window.location.href}`;
         },
     },
     

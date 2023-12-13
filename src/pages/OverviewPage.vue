@@ -9,8 +9,8 @@
                 :drinkName="drinks[friends.indexOf(friend)].strDrink" :drinkInfo="drinks[friends.indexOf(friend)]">
             </BaseOverview>
         </div>
-        <BaseButton :text="'Share the Party Drinks'" :share="true" @click="copy"></BaseButton>
-        <a id="whatsapp-share"><BaseButton :text="'Share the Party Drinks via Whatsapp'" :share="true" @click="copy"></BaseButton></a>
+        <!-- <BaseButton :text="'Share the Party Drinks'" :share="true" @click="copy"></BaseButton> -->
+        <a id="whatsapp-share"><BaseButton :text="'Share via Whatsapp'" :share="true" @click="copy"></BaseButton></a>
         <BaseButton :text="'Reset'" @click="reset"></BaseButton>
         <BackgroundSwirl class="bgswirl"></BackgroundSwirl>
     </div>
@@ -80,11 +80,10 @@ export default {
   align-items: center;
   justify-content: start;
   margin: 0;
-  padding: 4rem 0 10rem 0;
+  padding: 4rem 0 16rem 0;
   gap: 1.8rem;
   background: var(--Gradient-Teal-1-Blue-1);
   align-self: baseline;
-
 }
 
 
@@ -106,6 +105,7 @@ export default {
     gap: 1.4rem;
     width: min-content;    
     margin-bottom: 1.8rem;
+    
 }
 
 
