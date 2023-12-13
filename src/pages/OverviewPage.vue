@@ -62,7 +62,7 @@ export default {
 
             //Selecting element and giving it href
             console.log(this.getData);
-            // document.querySelector('#whatsapp-share').href = `https://api.whatsapp.com/send?text=${this.getData}`;
+            document.querySelector('#whatsapp-share').href = `https://api.whatsapp.com/send?text=${this.getData}`;
         },
         reset(){
             this.$router.push('start');
