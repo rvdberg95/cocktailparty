@@ -9,8 +9,8 @@
                 :drinkName="drinks[friends.indexOf(friend)].strDrink" :drinkInfo="drinks[friends.indexOf(friend)]">
             </BaseOverview>
         </div>
-        <a href="whatsapp://send?text=TESTING"  >WHATSAPP</a>
         <BaseButton :text="'Share the Party Drinks'" :share="true" @click="copy"></BaseButton>
+        <BaseButton :text="'Share the Party Drinks via Whatsapp'" :share="true" @click="copy" id="whatsapp-share"></BaseButton>
         <BaseButton :text="'Reset'" @click="reset"></BaseButton>
         <BackgroundSwirl class="bgswirl"></BackgroundSwirl>
     </div>
@@ -43,7 +43,7 @@ export default {
     },
     methods: {
         copy() {
-        getData = [];
+        this.getData = [];
             this.friends.forEach(friend => {
                 const id = this.friends.indexOf(friend);
                 const finalList = [];
@@ -55,10 +55,15 @@ export default {
                     }
                 }
                 const output = `${friend} will be making ${this.drinks[id].strDrink} \nIngredients needed: ${finalList} \n${this.drinks[id].strInstructions}`;
-                getData.push(output);
+                this.getData.push(output);
             });
-            console.log(getData.join('\n\n'));
-            navigator.clipboard.writeText(getData.join('\n\n'));
+            console.log(this.getData.join('\n\n'));
+            navigator.clipboard.writeText(this.getData.join('\n\n'));
+
+            //Selecting element and giving it href
+            const shareButton = document.querySelector('#whatsapp-share');
+            console.log(shareButton);
+            shareButton.href = `whatsapp://send?text=${this.getData}`;
         },
         reset(){
             this.$router.push('start');
