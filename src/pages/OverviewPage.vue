@@ -54,7 +54,7 @@ export default {
                         finalList.push(this.drinks[id][suffix]);
                     }
                 }
-                const output = `${friend} will be making ${this.drinks[id].strDrink} %0a Ingredients needed: ${finalList} %0a${this.drinks[id].strInstructions}%0a%0a`;
+                const output = `${friend.charAt(0).toUpperCase() + friend.slice(1)} will be making ${this.drinks[id].strDrink} %0a Ingredients needed: ${finalList} %0a${this.drinks[id].strInstructions}%0a%0a`;
                 this.getData.push(output);
             });
             console.log(this.getData.join('\n\n'));
@@ -62,7 +62,7 @@ export default {
 
             //Selecting element and giving it href
             console.log(this.getData);
-            document.querySelector('#whatsapp-share').href = `https://api.whatsapp.com/send?text=${this.getData}`;
+            // document.querySelector('#whatsapp-share').href = `https://api.whatsapp.com/send?text=${this.getData}`;
         },
         reset(){
             this.$router.push('start');
