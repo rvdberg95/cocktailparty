@@ -58,7 +58,7 @@ export default {
                 this.getData.push(output);
             });
             console.log(this.getData.join('\n\n'));
-            navigator.clipboard.writeText(this.getData.join('\r\n'));
+            navigator.clipboard.writeText(this.getData.join('%0a'));
 
             //Selecting element and giving it href
             console.log(this.getData);
