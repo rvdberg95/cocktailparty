@@ -58,10 +58,11 @@ export default {
                 this.getData.push(output);
             });
             console.log(this.getData.join('\n\n'));
-            navigator.clipboard.writeText(this.getData.join('\n\n'));
+            navigator.clipboard.writeText(this.getData.join('\r\n'));
 
             //Selecting element and giving it href
-            document.querySelector('#whatsapp-share').href = `https://api.whatsapp.com/send?text=${this.getData}`;
+            console.log(this.getData);
+            // document.querySelector('#whatsapp-share').href = `https://api.whatsapp.com/send?text=${this.getData}`;
         },
         reset(){
             this.$router.push('start');
