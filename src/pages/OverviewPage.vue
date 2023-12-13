@@ -54,11 +54,11 @@ export default {
                         finalList.push(this.drinks[id][suffix]);
                     }
                 }
-                const output = `${friend} will be making ${this.drinks[id].strDrink} \nIngredients needed: ${finalList} \n${this.drinks[id].strInstructions}`;
+                const output = `${friend} will be making ${this.drinks[id].strDrink} %0a Ingredients needed: ${finalList} %0a${this.drinks[id].strInstructions}%0a%0a`;
                 this.getData.push(output);
             });
             console.log(this.getData.join('\n\n'));
-            navigator.clipboard.writeText(this.getData.join('%0a'));
+            navigator.clipboard.writeText(this.getData.join('\n\n'));
 
             //Selecting element and giving it href
             console.log(this.getData);
