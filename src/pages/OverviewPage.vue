@@ -61,8 +61,6 @@ export default {
             navigator.clipboard.writeText(this.getData.join('\n\n'));
 
             //Selecting element and giving it href
-            const shareButton = document.querySelector('#whatsapp-share');
-            console.log(shareButton);
             document.querySelector('#whatsapp-share').href = `https://api.whatsapp.com/send?text=${this.getData}`;
         },
         reset(){

@@ -38,11 +38,12 @@ export default {
     border-radius: 0.3125rem;
     background: linear-gradient(135deg, #C2F2F9 0%, #9EDCDD 100%);
     overflow: hidden;
-    width: 32rem;
+    max-width: 32rem;
     text-align: center;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     z-index: 2;
-}
+      white-space: nowrap;
+    }
 
 h4{
     color: var(--teal-3);
