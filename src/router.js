@@ -22,13 +22,13 @@ const router = createRouter({
         name: 'generateddrinks',
         path: '/generateddrinks', // our-domain.com/teams => Teamslist
         component: GeneratedDrinks,
-  
+        
       },
       {
         name: 'overview',
         path: '/overview', // our-domain.com/teams => Teamslist
         component: OverviewPage,
-  
+        
       },
       {
         name: 'details',
@@ -36,12 +36,7 @@ const router = createRouter({
         props: {default: true},
         component: DrinkDetails,
       },
-      {
-        name: 'details-drink',
-        path: '/details/:drinkInfo',
-        props: {default: true},
-        component: DrinkDetails,
-      },
+      { path: '/:pathMatch(.*)', component: HomepageVue }
     ],
     linkActiveClass: 'active',
   });

@@ -68,6 +68,12 @@ export default {
             this.$router.push('start');
         }
     },
+    created(){
+        console.log(this.friends, this.drinks);
+        localStorage.setItem('friends', this.friends);
+        localStorage.setItem('drinks', this.drinks);
+        console.log(localStorage);
+    }
 };
 
 </script>
